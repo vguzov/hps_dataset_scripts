@@ -1,3 +1,4 @@
+from .libegl import EGLContext  # Important to keep for proper initialization
 import os
 import numpy as np
 from OpenGL.GL import *

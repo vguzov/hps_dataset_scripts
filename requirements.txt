@@ -6,3 +6,4 @@ PyOpenGL==3.1.5
 videoio
 scipy
 tqdm
+PyGLM==1.99.3
