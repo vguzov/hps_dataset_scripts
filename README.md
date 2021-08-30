@@ -6,7 +6,7 @@ Python scripts for demo/visualization of various data from HPS Dataset
 - ffmpeg>=2.1 with libx264 enabled and ffprobe installed
 
 ## Installation
-1. `git clone`
+1. `git clone https://github.com/vguzov/hps_dataset_scripts`
 2. `pip install -r requirements.txt`
 3. Get the SMPL model: Follow install instructions on https://github.com/gulvarol/smplpytorch
 
@@ -23,7 +23,17 @@ Run `python render_visual_localization.py <path to localization json> <path to a
 
 Sample result (with split screen rendering):
 <p align="center">
-<img src="images/split_screen_sample.png" alt="smpl" width="300"/>
+<img src="images/split_screen_sample.png" alt="sample" width="300"/>
+</p>
+
+## Sample 2: render a moving SMPL model inside a 3D scene scan
+- Go to https://github.com/vguzov/cloudrender
+- Follow install instructions
+- Run `download_test_assets.sh` and `test_scene_video.py` from there
+
+In `test_assets/output.mp4` you should get the video similar to this one:
+<p align="center">
+<img src="https://github.com/vguzov/cloudrender/raw/main/images/test_scene_video_output_example.gif" alt="sample" width="320"/>
 </p>
 
 ## Citation
