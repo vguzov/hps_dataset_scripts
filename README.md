@@ -11,6 +11,7 @@ Python scripts for demo/visualization of various data from HPS Dataset
 3. Get the SMPL model: Follow install instructions on https://github.com/gulvarol/smplpytorch
 
 ## Sample 1: visualize camera self-localization results
+Note: on Wayland systems (e.g. Ubuntu 24), you may need to run the script with `PYOPENGL_PLATFORM=egl` environment variable set.
 - Download localization results and scans from http://virtualhumans.mpi-inf.mpg.de/hps/
 - Keep the scans packed
 - Choose the virtual camera calibration: there are 2 choices, 
