@@ -26,6 +26,8 @@ Sample result (with split screen rendering):
 <img src="images/split_screen_sample.png" alt="sample" width="300"/>
 </p>
 
+Note: the camera localization framework is available at https://github.com/vguzov/camera_localization
+
 ## Sample 2: render a moving SMPL model inside a 3D scene scan
 - Go to https://github.com/vguzov/cloudrender
 - Follow install instructions

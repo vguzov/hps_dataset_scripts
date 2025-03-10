@@ -38,8 +38,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     nosplit = args.input_video is None
-
-    pointcloud = load_pc_from_zip(args.input_pczip, "*/pointcloud.ply")
+    try:
+        pointcloud = load_pc_from_zip(args.input_pczip, "pointcloud.ply")
+    except FileNotFoundError:
+        pointcloud = load_pc_from_zip(args.input_pczip, "*/pointcloud.ply")
     camera = known_cameras[args.camera]
 
     resolution = args.resolution
